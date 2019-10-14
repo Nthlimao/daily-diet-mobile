@@ -26,3 +26,10 @@ export default Login = () => {
         </View>
     )
 };
+
+Login.navigationOptions = {
+    title: 'Login',
+    headerStyle: {
+        elevation: 0, 
+    },
+};

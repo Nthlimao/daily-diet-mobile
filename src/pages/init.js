@@ -15,10 +15,13 @@ export default Init = () => {
         const data = getToken();
         setToken(data);
     }, []);
-
     
     if(token !== undefined) {
-        navigate(token ? 'App' : 'Auth');  
+        if(typeof token === 'string' && token !== null){
+            navigate('App');  
+        } else {
+            navigate('Auth');  
+        }
     }
 
     return (

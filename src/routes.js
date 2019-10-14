@@ -1,6 +1,3 @@
-// import { createStackNavigator } from 'react-navigation-stack'; 
-// import { createAppContainer } from 'react-navigation';
-
 import { createStackNavigator, createSwitchNavigator, createAppContainer } from 'react-navigation';
 
 import Init from './pages/init';
