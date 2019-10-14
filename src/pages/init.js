@@ -1,38 +1,33 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import { useQuery } from '@apollo/react-hooks';
+import { useNavigationState, useNavigation } from 'react-navigation-hooks'
 // import { useSelector } from 'react-redux';
-import gql from 'graphql-tag';
 
-const USERS = gql`{
-    users {
-        id
-        name
-        email
-    }
-}`;
+import User from '../providers/user';
+
 
 export default Init = () => {
+    // const { navigate } = useNavigation();
+    // navigate('Second');
     // const token = useSelector(state => state.token);
-    const { data, error, loading } = useQuery(USERS);
+    const { routeName } = useNavigationState();
+    // const { data, error, loading } = User.show("5d9cda1a38176a00174d5f13");
+    
+    // if (loading) {
+    //     return <View><Text>Loading...</Text></View>;
+    // }
+    
+    // if (error) {
+    //     return <View><Text>{error.message}</Text></View>;
+    // }
 
-    if (loading) {
-        return <View><Text>Loading...</Text></View>;
-    }
-
-    if (error) {
-        return <View><Text>{error.message}</Text></View>;
-    }
-
+    // const { showProfile } = data;
+    
     return (
         <View>
-            {data.users.map(user => (
-                <View key={user.id}>
-                <Text>{user.id}</Text>
-                <Text>{user.name}</Text>
-                <Text>{user.email}</Text>
-                </View>
-            ))}
+            <View>
+                <Text>Rota: {routeName}</Text>
+            </View>
         </View>
     )
 };

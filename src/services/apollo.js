@@ -1,12 +1,25 @@
 import { ApolloClient } from 'apollo-client';
 import { createHttpLink } from 'apollo-link-http';
-import { InMemoryCache } from "apollo-boost";
+import { InMemoryCache, ApolloLink, HttpLink } from "apollo-boost";
 
+const httpLink = new HttpLink({ uri: '' });
+
+const authLink = new ApolloLink((operation, forward) => {
+    const token = "";
+  
+    operation.setContext({
+      headers: {
+        authorization: token ? `Bearer ${token}` : ''
+      }
+    });
+  
+    return forward(operation);
+  });
+
+  
 const client = new ApolloClient({
+    link: httpLink,
     cache: new InMemoryCache(),
-    link: createHttpLink({ 
-        uri: process.env.API_GRAPHQL
-    }),
 });
 
 export default client;
