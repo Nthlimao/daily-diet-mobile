@@ -1,32 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text } from 'react-native';
-import { useNavigationState, useNavigation } from 'react-navigation-hooks'
-// import { useSelector } from 'react-redux';
+import { getStorage } from '../store/local';
+import { useNavigation } from 'react-navigation-hooks';
 
-import User from '../providers/user';
-
+async function getToken() {
+    return await getStorage('userToken');
+}
 
 export default Init = () => {
-    // const { navigate } = useNavigation();
-    // navigate('Second');
-    // const token = useSelector(state => state.token);
-    const { routeName } = useNavigationState();
-    // const { data, error, loading } = User.show("5d9cda1a38176a00174d5f13");
+    const { navigate } = useNavigation();
+    const [ token, setToken ] = useState(undefined);
     
-    // if (loading) {
-    //     return <View><Text>Loading...</Text></View>;
-    // }
-    
-    // if (error) {
-    //     return <View><Text>{error.message}</Text></View>;
-    // }
+    useEffect(() => {
+        const data = getToken();
+        setToken(data);
+    }, []);
 
-    // const { showProfile } = data;
     
+    if(token !== undefined) {
+        navigate(token ? 'App' : 'Auth');  
+    }
+
     return (
         <View>
             <View>
-                <Text>Rota: {routeName}</Text>
+                <Text>Loading...</Text>
             </View>
         </View>
     )

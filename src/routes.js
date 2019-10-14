@@ -1,13 +1,31 @@
-import { createStackNavigator } from 'react-navigation-stack'; 
-import { createAppContainer } from 'react-navigation';
+// import { createStackNavigator } from 'react-navigation-stack'; 
+// import { createAppContainer } from 'react-navigation';
+
+import { createStackNavigator, createSwitchNavigator, createAppContainer } from 'react-navigation';
 
 import Init from './pages/init';
 import Second from './pages/second';
+import Login from './pages/login';
+import Register from './pages/register';
+import Main from './pages/main';
 
-const Stack = createStackNavigator({
+const AppStack = createStackNavigator({
+    Main,
+    Second
+});
+
+const AuthStack = createStackNavigator({
+    Login,
+    Register
+});
+
+const Switch = createSwitchNavigator({
     Init,
-    Second,
+    App: AppStack,
+    Auth: AuthStack,
+},{
+    initialRouteName: 'Init',
 });
 
 
-export default createAppContainer(Stack);
+export default createAppContainer(Switch);
