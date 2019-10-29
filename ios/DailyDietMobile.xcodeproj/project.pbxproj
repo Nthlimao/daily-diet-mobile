@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* DailyDietMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* DailyDietMobileTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
@@ -16,6 +15,15 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* DailyDietMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* DailyDietMobileTests.m */; };
+		A9114C295A894918A35D654D /* Barlow-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3A67D3932C84D478DF7AE60 /* Barlow-Bold.otf */; };
+		70870C1F746348FD9E716494 /* Barlow-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 08B880DF56684FAF86A603F1 /* Barlow-Light.otf */; };
+		E64010CF6E47412FA5CED66F /* Barlow-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 57ED06F96E0540BBAFB4164D /* Barlow-Medium.otf */; };
+		6C08A1EE7F934FBC87FB732A /* Barlow-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A427501E73DF47C08200C4D6 /* Barlow-Regular.otf */; };
+		C125AA23E8004A6F983AFB0C /* Barlow-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = C63493767FBA4B268B4E4EBB /* Barlow-Thin.otf */; };
+		34529EB678D749C7BF531E2E /* Segoeui-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3B216CD059744E993639CFC /* Segoeui-Bold.ttf */; };
+		99E0F7AC31AF4182BD1A4691 /* Segoeui-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CF3064FF48442BBAC63CD57 /* Segoeui-Light.ttf */; };
+		E9D8D8AD21EA430399A504B0 /* Segoeui-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1657B8A1EECF4C3388052F15 /* Segoeui-Regular.ttf */; };
+		112BD12D5C874D36ADB6EB29 /* Segoeui-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9490A7D691404036B6CF01CC /* Segoeui-Semibold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,15 @@
 		2D02E4901E0B4A5D006451C7 /* DailyDietMobile-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DailyDietMobile-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		A3A67D3932C84D478DF7AE60 /* Barlow-Bold.otf */ = {isa = PBXFileReference; name = "Barlow-Bold.otf"; path = "../src/assets/fonts/Barlow-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		08B880DF56684FAF86A603F1 /* Barlow-Light.otf */ = {isa = PBXFileReference; name = "Barlow-Light.otf"; path = "../src/assets/fonts/Barlow-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		57ED06F96E0540BBAFB4164D /* Barlow-Medium.otf */ = {isa = PBXFileReference; name = "Barlow-Medium.otf"; path = "../src/assets/fonts/Barlow-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A427501E73DF47C08200C4D6 /* Barlow-Regular.otf */ = {isa = PBXFileReference; name = "Barlow-Regular.otf"; path = "../src/assets/fonts/Barlow-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C63493767FBA4B268B4E4EBB /* Barlow-Thin.otf */ = {isa = PBXFileReference; name = "Barlow-Thin.otf"; path = "../src/assets/fonts/Barlow-Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F3B216CD059744E993639CFC /* Segoeui-Bold.ttf */ = {isa = PBXFileReference; name = "Segoeui-Bold.ttf"; path = "../src/assets/fonts/Segoeui-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1CF3064FF48442BBAC63CD57 /* Segoeui-Light.ttf */ = {isa = PBXFileReference; name = "Segoeui-Light.ttf"; path = "../src/assets/fonts/Segoeui-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1657B8A1EECF4C3388052F15 /* Segoeui-Regular.ttf */ = {isa = PBXFileReference; name = "Segoeui-Regular.ttf"; path = "../src/assets/fonts/Segoeui-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9490A7D691404036B6CF01CC /* Segoeui-Semibold.ttf */ = {isa = PBXFileReference; name = "Segoeui-Semibold.ttf"; path = "../src/assets/fonts/Segoeui-Semibold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +157,7 @@
 				00E356EF1AD99517003FC87E /* DailyDietMobileTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				B75480C9ABB3433B99F24BED /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -156,6 +174,23 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		B75480C9ABB3433B99F24BED /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				A3A67D3932C84D478DF7AE60 /* Barlow-Bold.otf */,
+				08B880DF56684FAF86A603F1 /* Barlow-Light.otf */,
+				57ED06F96E0540BBAFB4164D /* Barlow-Medium.otf */,
+				A427501E73DF47C08200C4D6 /* Barlow-Regular.otf */,
+				C63493767FBA4B268B4E4EBB /* Barlow-Thin.otf */,
+				F3B216CD059744E993639CFC /* Segoeui-Bold.ttf */,
+				1CF3064FF48442BBAC63CD57 /* Segoeui-Light.ttf */,
+				1657B8A1EECF4C3388052F15 /* Segoeui-Regular.ttf */,
+				9490A7D691404036B6CF01CC /* Segoeui-Semibold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -240,7 +275,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -293,6 +328,15 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				A9114C295A894918A35D654D /* Barlow-Bold.otf in Resources */,
+				70870C1F746348FD9E716494 /* Barlow-Light.otf in Resources */,
+				E64010CF6E47412FA5CED66F /* Barlow-Medium.otf in Resources */,
+				6C08A1EE7F934FBC87FB732A /* Barlow-Regular.otf in Resources */,
+				C125AA23E8004A6F983AFB0C /* Barlow-Thin.otf in Resources */,
+				34529EB678D749C7BF531E2E /* Segoeui-Bold.ttf in Resources */,
+				99E0F7AC31AF4182BD1A4691 /* Segoeui-Light.ttf in Resources */,
+				E9D8D8AD21EA430399A504B0 /* Segoeui-Regular.ttf in Resources */,
+				112BD12D5C874D36ADB6EB29 /* Segoeui-Semibold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
