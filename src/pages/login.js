@@ -30,7 +30,9 @@ export default Login = () => {
                 <TextInput style={styles.input} placeholder="Senha" value={variables.password}/>
                 <Image style={styles.icon} source={require('./images/padlock.png')} />
             </View>
-            <Button title="Login" color="#96C5A4" style={styles.button}/>
+            <View style={styles.wrapBtn}>
+                <Button title="Login" color="#96C5A4" style={styles.button}/>
+            </View>
         </View>
     )
 };
@@ -72,10 +74,11 @@ const styles = StyleSheet.create({
         paddingLeft: 10,
     },
     button: {
-        flex: 1,
+        height:50,
+        backgroundColor: '#96C5A4',
+    },
+    wrapBtn: {
         alignSelf: 'stretch',
-        padding: 10,
-        background: '#96C5A4',
     }
 })
 
