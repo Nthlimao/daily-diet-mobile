@@ -1,4 +1,5 @@
 import { createStackNavigator, createSwitchNavigator, createAppContainer } from 'react-navigation';
+import transitionConfig from './config/transition.config';
 
 import Init from './pages/init';
 import Second from './pages/second';
@@ -9,11 +10,16 @@ import Main from './pages/main';
 const AppStack = createStackNavigator({
     Main,
     Second
+},
+{
+    transitionConfig
 });
 
 const AuthStack = createStackNavigator({
     Login,
     Register
+},{
+    transitionConfig
 });
 
 const Switch = createSwitchNavigator({
@@ -21,7 +27,7 @@ const Switch = createSwitchNavigator({
     App: AppStack,
     Auth: AuthStack,
 },{
-    initialRouteName: 'Init',
+    initialRouteName: 'Init'    
 });
 
 
